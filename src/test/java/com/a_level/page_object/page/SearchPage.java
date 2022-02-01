@@ -35,6 +35,10 @@ public class SearchPage extends BasePage{
         searchField.sendKeys(login);
     }
 
+    public boolean inputSearchIsClear() {
+        return this.isClear(searchField);
+    }
+
     /**
      * method search button click
      */

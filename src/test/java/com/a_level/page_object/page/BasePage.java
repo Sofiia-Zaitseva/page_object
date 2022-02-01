@@ -10,4 +10,8 @@ public abstract class BasePage {
     public boolean isDisplayed(WebElement element){
         return element.isDisplayed();
     }
+
+    public boolean isClear(WebElement element){
+        return element.getText().equals("");
+    }
 }
